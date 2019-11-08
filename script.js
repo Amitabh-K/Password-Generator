@@ -1,3 +1,26 @@
+
+// DOM elements 
+
+const outputEl = document.getElementById('password');
+const lengthEl = document.getElementById('length');
+const uppercaseElement = document.getElementById('uppercase');
+const lowercaseElement = document.getElementById('lowercase');
+const numberEl = document.getElementById('numbers');
+const symbolsEl = document.getElementById('symbols');
+const generateEl = document.getElementById('generate');
+const clipboardEl = document.getElementById('clipboard');
+
+
+const randomFunc = {
+    lower: getRandomLower,
+    upper: getRandomUpper,
+    number: getRandomNumber,
+    symbol: getRandomSymbol
+};
+
+
+
+
 // Character generator functions
 
 
@@ -31,7 +54,13 @@ function getRamdomSpecialChar (){
     const SpecialChar = "!@#$%^&*(){}[]<>/?+.";
     return SpecialChar[Math.floor(Math.random() * SpecialChar.length)];
 }
+
 console.log(getRamdomSpecialChar());
+
+
+
+
+
 
 
 
