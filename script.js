@@ -17,10 +17,21 @@ function getRamdomUpperCase (){
 }
 console.log(getRamdomUpperCase());
 
-// Replicating thr same as for alphabets function using browser charset ..with change "0" being 48 and 9 to follow
+// Replicating the same as for alphabets function using browser charset ..with change "0" being 48 and 9 to follow
 
 function getRamdomNumber (){
     return String.fromCharCode(Math.floor(Math.random()*10) + 48);
 }
 
 console.log(getRamdomNumber());
+
+// Replicating similar function as above but charCode being avoided for ease of coding
+
+function getRamdomSpecialChar (){
+    const SpecialChar = "!@#$%^&*(){}[]<>/?+.";
+    return SpecialChar[Math.floor(Math.random() * SpecialChar.length)];
+}
+console.log(getRamdomSpecialChar());
+
+
+
