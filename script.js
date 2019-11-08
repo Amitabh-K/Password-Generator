@@ -1,6 +1,12 @@
-// generator functions
+// Character generator functions
+
+
+
 function geTRamdomLowerCase (){
-    return String.fromCharCode(97);
+    return String.fromCharCode(Math.floor(Math.random()*26) + 97);
 }
 
-console.log(Math.floor(Math.random()*26));
+// Reference source https://www.w3schools.com/html/html_charset.asp
+
+console.log(geTRamdomLowerCase());
+
