@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px;  
+    padding: 50px; 
 }
 
 p {
@@ -20,16 +20,16 @@ h1 {
 	text-align: center;
 }
 
-input[type=checkbox] {
-	margin-right: 0;
-}
+
+
+
 
 .container {
 	background-color:#050A30;
 	display: flex;
 	flex-direction:column;    
     padding: 20px;
-    width: 600px;
+    width: 550px;
     max-width: 100%;
     border-radius: 15px;
 }
@@ -49,7 +49,8 @@ input[type=checkbox] {
 }
 
 .password .btn {
-	background-color:#414141;	
+	background-color:#414141;
+	color: #ffffff;	
 	border-radius: 10px;
 	position: absolute;
 	top: 5px;
@@ -58,13 +59,16 @@ input[type=checkbox] {
 	width: 40px;
 }
 
-.btn {
-	border: none;
+#generate {
+	border: solid 1px #ffffff;
 	color: #fff;
 	cursor: pointer;
 	font-size: 1.6rem;	
 	background-color: #414141;
-	align-items: flex-start;
+	align-items: center;
+	margin: auto;
+	padding: 3%;
+	
 }
 
 
@@ -74,7 +78,7 @@ input[type=checkbox] {
 	justify-content: space-between;
 	align-items: center;
 	margin: 25px 0;	
-	Zoom:1.5;
+	zoom:2;
 
 	
 }
