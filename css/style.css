@@ -34,7 +34,7 @@ input[type=checkbox] {
     border-radius: 15px;
 }
 
-.output {
+.password {
 	background-color:#CCDFCB;
 	color: #050A30;
 	border-radius: 5px;
@@ -48,7 +48,7 @@ input[type=checkbox] {
 	width: 100%;
 }
 
-.output .btn {
+.password .btn {
 	background-color:#414141;	
 	border-radius: 10px;
 	position: absolute;

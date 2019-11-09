@@ -67,16 +67,36 @@ if (typesCount ===0) {
 typesArr.forEach(type =>{
 const functname = Object.keys(type)[0];
 
-    console.log(functname);
+    
 
     generatedPassword += randomFunc[functname]();
 });
 
     }
-  console.log(generatedPassword);
+  const combinedCharacters =  generatedPassword.slice(0, length);
 
+    return combinedCharacters;
 
 }
+
+// copy the password to clipbord
+
+clipboardEl.addEventListener("click", () => {
+    const textarea = document.createElement('textarea');
+    const password = outputEl.innerText;
+
+    if(!password) {
+        return;
+    }
+
+    textarea.value = password;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    textarea.remove();
+})
+
+
 
 // Character generator functions
 // Reference source https://www.w3schools.com/html/html_charset.asp
