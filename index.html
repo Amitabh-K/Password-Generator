@@ -9,42 +9,69 @@
     <script src="https://kit.fontawesome.com/3e9d289ac8.js" crossorigin="anonymous"></script>    
     <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
 
-    <body>        
-        <div class="container text-white mt-4">
-            <h1 clas>Password Generator</h1>
+    <body>
+   
+ <!-- Container for nav bar -->   
+    <!-- As a heading -->
+    <div class=" mastheadr rounded">
+            <div class="sticky-top rounded">      
+               <div class="ngroup rounded">
+                   <nav  class=" p-3 mb-0  bg-info text-white text-center h1 style:">Password Generator by Amitabh Kumar</nav>
+               <div class="xbox rounded"> 
+                   <nav class="p-2 bg-light mb-0 ">
+                     <ul class=" list nav nav-tabs justify-content-center">
+                         <li class="nav-item">
+                           <a class="nav-link text-dark" href="./index.html">About</a>
+                           </li>
+                           <li class="nav-item">
+                           <a class="nav-link text-dark" href="./portfolio.html">Portfolio</a>
+                           </li>
+                           <li class="nav-item">
+                           <a class="nav-link active" href="./contact.html">Contact</a>
+                         </li>
+                     </ul>          
+                  </nav>
+                 </div>   
+               </div>
+            </div> 
+           </div>        
+
+        <div class="container bg-dark text-dark mt-4">
+            <h1 clas></h1>
             <div class="password">
                 <span id="password"></span>
-                <button class="btn" id="clipboard">
+                <button class="btn bg-info text-white position-absolute" id="clipboard">
                     <i class="far fa-clipboard"></i>
                 </button>
             </div>
-        <div class="container bg-secondary mt-4"> 
-            <div class="mainBox">
-                <div class="box">
+        <div class=" box container bg-info mt-4"> 
+            <div class="mainBox ">
+                <div class="box border border-dark m-4 p-3 rounded d-flex">
                     <label>Password length</label>
                     <input type="number" id="length" min='8' max='128' value='8' />
                 </div>
-                <div class="box">
+                <div class="box border border-dark m-4 p-3 d-flex">
                     <label>Include uppercase</label> 
                     <input type="checkbox" id="upper" checked />
                 </div>
-                <div class="box">
+                <div class="box border border-dark m-4 p-3 d-flex ju">
                     <label>Include lowercase</label> 
                     <input type="checkbox" id="lower" checked />
                 </div>
-                <div class="box">
+                <div class="box border border-dark m-4 p-3 d-flex">
                     <label>Include numbers</label> 
                     <input type="checkbox" id="number" checked />
                 </div>
-                <div class="box">
+                <div class="box border border-dark m-4 p-3 d-flex">
                     <label>Include Special Characters</label> 
                     <input type="checkbox" id="symbol" checked />
                 </div>            
           </div> 
-            <button class=" box4 btn btn-large" id="generate">
-                Generate password
-            </button>
         </div>
+            <button class="  bg-info btn btn-large border border-dark my-4  p-2 w-100" id="generate">
+                Generate Password Now
+            </button>
+        
     </div>  
     
 
