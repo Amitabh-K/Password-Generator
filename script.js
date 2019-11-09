@@ -29,10 +29,11 @@ generateEl.addEventListener("click", ()  => {
 
 
     
-    console.log(containsLowerCase, containsNumber, containsUpperCase, containssymbol, length );
+    generatePassword(containsLowerCase, containsNumber, containsUpperCase, containssymbol, length );
 
 });
  
+
 
 
 
