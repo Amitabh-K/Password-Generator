@@ -2,7 +2,7 @@
 
 body {
     background-color:#CCDFCB;
-    background-image: url(https://cdn.pixabay.com/photo/2014/02/27/16/08/splashing-275950_960_720.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2018/03/03/09/40/background-3195268_960_720.jpg);
     color: white;
     display: flex;    
     flex-direction: column;
@@ -25,7 +25,7 @@ h1 {
 
 
 .container {
-	background-color:#050A30;
+	background-color:#76323f;
 	display: flex;
 	flex-direction:column;    
     padding: 20px;
