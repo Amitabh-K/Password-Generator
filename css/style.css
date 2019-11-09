@@ -1,27 +1,8 @@
 
 
-body {
-    background-color:#CCDFCB;
-    background-image: url(https://cdn.pixabay.com/photo/2018/03/03/09/40/background-3195268_960_720.jpg);
-    color: white;
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px; 
-}
-
-p {
-	margin: 5px 0;
-}
-
-h1 {
-	margin: 10px 0 20px;
-	text-align: center;
-}
-
-
-
+body {    
+    background-image: url(https://cdn.pixabay.com/photo/2018/03/03/09/40/background-3195268_960_720.jpg);        
+	}
 
 
 .container {
@@ -31,16 +12,15 @@ h1 {
     padding: 20px;
     width: 550px;
     max-width: 100%;
-    border-radius: 15px;
+	border-radius: 25px;
+	
 }
 
 .password {
 	background-color:#CCDFCB;
-	color: #050A30;
-	border-radius: 5px;
+	color: #050A30;	
 	display: flex;	
-	justify-content: flex-start;
-	align-items: center;
+	justify-content: flex-start;	
 	position: relative;
 	font-size: 16px;	
 	padding: 12px 10px;
@@ -49,26 +29,34 @@ h1 {
 }
 
 .password .btn {
-	background-color:#414141;
+	background-color: #76323f;
 	color: #ffffff;	
 	border-radius: 10px;
 	position: absolute;
 	top: 5px;
 	right: 5px;
-	height: 40px;
-	width: 40px;
+
 }
 
-#generate {
+#password .btn:hover {
+  background-color: black;
+}
+
+ #generate{
 	border: solid 1px #ffffff;
 	color: #fff;
 	cursor: pointer;
 	font-size: 1.6rem;	
-	background-color: #414141;
+	background-color: #76323f;
 	align-items: center;
 	margin: auto;
 	padding: 3%;
-	
+}
+
+
+
+#generate:hover {
+  background-color: black;
 }
 
 
@@ -76,10 +64,9 @@ h1 {
 	display: flex;
 	font: .8rem sans-serif;
 	justify-content: space-between;
-	align-items: center;
-	margin: 25px 0;	
+	align-items: center;	
 	zoom:2;
-
 	
 }
+
 
