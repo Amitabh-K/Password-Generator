@@ -21,8 +21,9 @@ const randomFunc = {
 // Reference source https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 
 generateEl.addEventListener("click", ()  => {
-    const length = lengthEl.value;
-    console.log(length);
+    const length = parseInt(lengthEl.value);
+    
+    console.log(typeof length);
 
 });
  
