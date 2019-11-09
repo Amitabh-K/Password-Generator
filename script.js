@@ -3,27 +3,33 @@
 
 const outputEl = document.getElementById('password');
 const lengthEl = document.getElementById('length');
-const uppercaseElement = document.getElementById('uppercase');
-const lowercaseElement = document.getElementById('lowercase');
+const uppercaseEl = document.getElementById('uppercase');
+const lowercaseEl = document.getElementById('lowercase');
 const numberEl = document.getElementById('numbers');
-const specialCha = document.getElementById('symbols');
+const symbolEl = document.getElementById('symbols');
 const generateEl = document.getElementById('generate');
 const clipboardEl = document.getElementById('clipboard');
 
 
 const randomFunc = {
-    lower:  getRamdomLowerCase,
-    upper:  getRamdomUpperCase,
-    number: getRamdomNumber,
-    SpecialChar: getRamdomSpecialChar
+    lowercase:  getRamdomLowerCase,
+    uppercase:  getRamdomUpperCase,
+    numbers: getRamdomNumber,
+    symbols: getRamdomsymbol
 };
 
 // Reference source https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 
 generateEl.addEventListener("click", ()  => {
     const length = parseInt(lengthEl.value);
+    const containsUpperCase = uppercaseEl.checked;
+    const containsLowerCase = lowercaseEl.checked;
+    const containsNumber = numberEl.checked;
+    const containssymbol = symbolEl.checked;
+
+
     
-    console.log(typeof length);
+    console.log(containsLowerCase, containsNumber, containsUpperCase, containssymbol, length );
 
 });
  
@@ -58,11 +64,11 @@ console.log(getRamdomNumber());
 
 // Replicating similar function as above but charCode being avoided for ease of coding
 
-function getRamdomSpecialChar (){
-    const specialChar = "!@#$%^&*(){}[]<>/?+.";
-    return specialChar[Math.floor(Math.random() * specialChar.length)];
+function getRamdomsymbol (){
+    const symbol = "!@#$%^&*(){}[]<>/?+.";
+    return symbol[Math.floor(Math.random() * symbol.length)];
 }
 
-console.log(getRamdomSpecialChar());
+console.log(getRamdomsymbol());
 
 
