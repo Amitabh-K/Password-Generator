@@ -1,0 +1,81 @@
+
+
+body {
+    background-color:#CCDFCB;
+    background-image: url(https://cdn.pixabay.com/photo/2014/02/27/16/08/splashing-275950_960_720.jpg);
+    color: white;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;  
+}
+
+p {
+	margin: 5px 0;
+}
+
+h1 {
+	margin: 10px 0 20px;
+	text-align: center;
+}
+
+input[type=checkbox] {
+	margin-right: 0;
+}
+
+.container {
+	background-color:#050A30;
+	display: flex;
+	flex-direction:column;    
+    padding: 20px;
+    width: 600px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.output {
+	background-color:#CCDFCB;
+	color: #050A30;
+	border-radius: 5px;
+	display: flex;	
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	font-size: 16px;	
+	padding: 12px 10px;
+	height: 50px;
+	width: 100%;
+}
+
+.output .btn {
+	background-color:#414141;	
+	border-radius: 10px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.btn {
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.6rem;	
+	background-color: #414141;
+	align-items: flex-start;
+}
+
+
+.box {
+	display: flex;
+	font: .8rem sans-serif;
+	justify-content: space-between;
+	align-items: center;
+	margin: 25px 0;	
+	Zoom:1.5;
+
+	
+}
+

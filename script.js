@@ -6,24 +6,31 @@ const lengthEl = document.getElementById('length');
 const uppercaseElement = document.getElementById('uppercase');
 const lowercaseElement = document.getElementById('lowercase');
 const numberEl = document.getElementById('numbers');
-const symbolsEl = document.getElementById('symbols');
+const specialCha = document.getElementById('symbols');
 const generateEl = document.getElementById('generate');
 const clipboardEl = document.getElementById('clipboard');
 
 
 const randomFunc = {
-    lower: getRandomLower,
-    upper: getRandomUpper,
-    number: getRandomNumber,
-    symbol: getRandomSymbol
+    lower:  getRamdomLowerCase,
+    upper:  getRamdomUpperCase,
+    number: getRamdomNumber,
+    SpecialChar: getRamdomSpecialChar
 };
+
+// Reference source https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+
+generateEl.addEventListener("click", ()  => {
+    const length = lengthEl.value;
+    console.log(length);
+
+});
+ 
 
 
 
 
 // Character generator functions
-
-
 // Reference source https://www.w3schools.com/html/html_charset.asp
 
 // LowerCase random function using browser charset "a" being "97" and 25 alphabets to follow
@@ -51,16 +58,10 @@ console.log(getRamdomNumber());
 // Replicating similar function as above but charCode being avoided for ease of coding
 
 function getRamdomSpecialChar (){
-    const SpecialChar = "!@#$%^&*(){}[]<>/?+.";
-    return SpecialChar[Math.floor(Math.random() * SpecialChar.length)];
+    const specialChar = "!@#$%^&*(){}[]<>/?+.";
+    return specialChar[Math.floor(Math.random() * specialChar.length)];
 }
 
 console.log(getRamdomSpecialChar());
-
-
-
-
-
-
 
 
