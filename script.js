@@ -44,17 +44,39 @@ function generatePassword(lower, upper, number, symbol, length){
 // remove the uncheked boxes
 // loop over the length and call generator function for each type
 // add final password to the password variable
- var generatedPassword = "";
+ 
+var generatedPassword = "";
+
+// count number of checked boxes
 
  const typesCount = lower + upper + number + symbol;
- console.log("typescount:", typesCount);
- 
 
+ console.log("typescount:", typesCount);
+
+ //array of objects lower, upper, number, symbol  as key & filter out unckecked
+
+ const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(item  => Object.values(item)[0])
+
+ console.log("typesArr: ", typesArr);
+
+if (typesCount ===0) {
+    return "";
+    }
+
+    for (let i = 0; i < length; i += typesCount) {
+typesArr.forEach(type =>{
+const functname = Object.keys(type)[0];
+
+    console.log(functname);
+
+    generatedPassword += randomFunc[functname]();
+});
+
+    }
+  console.log(generatedPassword);
 
 
 }
-
-
 
 // Character generator functions
 // Reference source https://www.w3schools.com/html/html_charset.asp
