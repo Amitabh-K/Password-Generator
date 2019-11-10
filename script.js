@@ -70,8 +70,10 @@ var generatedPassword = "";
  console.log("typesArr: ", typesArr);
 
 if (typesCount ===0) {
-    return "PASSWORD CANNOT BE BLANK!!!"
+     return("!!! Cannot generate bank password !!!"); 
+   
     }
+    
 
     for (let i = 0; i < length; i += typesCount) {
 typesArr.forEach(type =>{
