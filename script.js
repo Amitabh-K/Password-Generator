@@ -133,3 +133,5 @@ function getRamdomsymbol (){
 console.log(getRamdomsymbol());
 
 
+
+
