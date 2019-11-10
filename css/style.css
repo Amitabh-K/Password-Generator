@@ -1,6 +1,6 @@
 
 body {    
-    background-image: url(https://cdn.pixabay.com/photo/2018/03/03/09/40/background-3195268_960_720.jpg);        
+    background-image:url(../images/artificial.jpg);;        
 	}
 
 .container {
@@ -26,6 +26,7 @@ body {
 	padding: 30px 10px;
 	height: 100px;
 	width: 100%;
+	border-radius: 10px;
 		
 }
 
@@ -36,7 +37,7 @@ body {
 
 
 #generate{
-border-radius: 20px;
+border-radius: 10px;
 font-size: 2rem;
 }
 
