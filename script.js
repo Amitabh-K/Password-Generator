@@ -22,7 +22,7 @@ const randomFunc = {
 
 // create event listner
 
-generateEl.addEventListener("click", function() {
+generateEl.addEventListener("click", ()  => {
     const length = parseInt(lengthEl.value);    
     const containsLower = lowerEl.checked;
     const containsUpper = upperEl.checked;
@@ -45,55 +45,55 @@ function generatePassword(lower, upper, number, specialChar, length){
 // loop over the length and call generator function for each type
 // add final password to the password variable
  
-var genPwd = "";
+var generatedPassword = "";
 
 // count number of checked boxes
 
- const varCountType = lower + upper + number + specialChar;
+ const typesCount = lower + upper + number + specialChar;
 
- console.log("varCountType:", varCountType);
+ console.log("typescount:", typesCount);
 
  //array of objects lower, upper, number, specialChar  as key & filter out unckecked
 
- const varCountArr = [{lower}, {upper}, {number}, {specialChar}].filter(item  => Object.values(item)[0])
+ const typesArr = [{lower}, {upper}, {number}, {specialChar}].filter(item  => Object.values(item)[0])
 
- console.log("varCountArr: ", varCountArr);
+ console.log("typesArr: ", typesArr);
 
-if (varCountType ===0) {
+if (typesCount ===0) {
     return "";
     }
 
-    for (let i = 0; i < length; i += varCountType) {
-varCountArr.forEach(type =>{
+    for (let i = 0; i < length; i += typesCount) {
+typesArr.forEach(type =>{
 const functname = Object.keys(type)[0];
 
     
 
-    genPwd += randomFunc[functname]();
+    generatedPassword += randomFunc[functname]();
 });
 
     }
-  const allChar =  genPwd.slice(0, length);
+  const combinedCharacters =  generatedPassword.slice(0, length);
 
-    return allChar;
+    return combinedCharacters;
 
 }
 
 // copy the password to clipbord
 
-clipboardEl.addEventListener("click", function() {
-    const pwdTextArea = document.createElement('pwdTextArea');
+clipboardEl.addEventListener("click", () => {
+    const textarea = document.createElement('textarea');
     const password = outputEl.innerText;
 
     if(!password) {
         return;
     }
 
-    pwdTextArea.value = password;
-    document.body.appendChild(pwdTextArea);
-    pwdTextArea.select();
+    textarea.value = password;
+    document.body.appendChild(textarea);
+    textarea.select();
     document.execCommand("copy");
-    pwdTextArea.remove();
+    textarea.remove();
 })
 
 
@@ -126,12 +126,9 @@ console.log(getRamdomNumber());
 // Replicating similar function as above but charCode being avoided for ease of coding
 
 function getRamdomspecialChar (){
-    const specialChar = "!@#$%^&*(){}[]<>/?+.";
+    const specialChar = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
     return specialChar[Math.floor(Math.random() * specialChar.length)];
 }
-
 console.log(getRamdomspecialChar());
-
-
 
 
