@@ -22,7 +22,7 @@ const randomFunc = {
 
 // create event listner
 
-generateEl.addEventListener("click", ()  => {
+generateEl.addEventListener("click", function() {
     const length = parseInt(lengthEl.value);    
     const containsLower = lowerEl.checked;
     const containsUpper = upperEl.checked;
@@ -81,7 +81,7 @@ const functname = Object.keys(type)[0];
 
 // copy the password to clipbord
 
-clipboardEl.addEventListener("click", () => {
+clipboardEl.addEventListener("click", function() {
     const textarea = document.createElement('textarea');
     const password = outputEl.innerText;
 

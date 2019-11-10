@@ -17,19 +17,13 @@ body {
 
 
 
-.password {
-	background-color:#CCDFCB;
-	font-size: 2rem;
-	overflow: scroll;
-	Color: #050A30;	
-	display: flex;	
-	justify-content: flex-start;	
-	position: relative;		
-	padding: 10px 10px;
-	height: 85px;
+.password {	
+	font-size: 1.8rem;
+	overflow-x: scroll;		
+	position: relative;	
+	height: 90px;
 	width: 100%;
-	border-radius: 10px;
-		
+	border-radius: 10px;		
 }
 
 .password .btn {	
