@@ -22,6 +22,16 @@ const randomFunc = {
 
 // create event listner
 
+/*
+
+if (!lowerEl.checked && !upperEl.checked.checked && !numberEl.checked && specialCharEl.checked) {
+    errorMessage.innerHTML = "Well, passwords cannot be blank."
+    return;
+}
+
+*/
+
+
 generateEl.addEventListener("click", function() {
     const length = parseInt(lengthEl.value);    
     const containsLower = lowerEl.checked;
@@ -60,7 +70,7 @@ var generatedPassword = "";
  console.log("typesArr: ", typesArr);
 
 if (typesCount ===0) {
-    return "";
+    return "PASSWORD CANNOT BE BLANK!!!"
     }
 
     for (let i = 0; i < length; i += typesCount) {
