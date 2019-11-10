@@ -22,7 +22,7 @@ const randomFunc = {
 
 // create event listner
 
-generateEl.addEventListener("click", ()  => {
+generateEl.addEventListener("click", function() {
     const length = parseInt(lengthEl.value);    
     const containsLower = lowerEl.checked;
     const containsUpper = upperEl.checked;
@@ -45,55 +45,55 @@ function generatePassword(lower, upper, number, specialChar, length){
 // loop over the length and call generator function for each type
 // add final password to the password variable
  
-var generatedPassword = "";
+var genPwd = "";
 
 // count number of checked boxes
 
- const typesCount = lower + upper + number + specialChar;
+ const varCountType = lower + upper + number + specialChar;
 
- console.log("typescount:", typesCount);
+ console.log("varCountType:", varCountType);
 
  //array of objects lower, upper, number, specialChar  as key & filter out unckecked
 
- const typesArr = [{lower}, {upper}, {number}, {specialChar}].filter(item  => Object.values(item)[0])
+ const varCountArr = [{lower}, {upper}, {number}, {specialChar}].filter(item  => Object.values(item)[0])
 
- console.log("typesArr: ", typesArr);
+ console.log("varCountArr: ", varCountArr);
 
-if (typesCount ===0) {
+if (varCountType ===0) {
     return "";
     }
 
-    for (let i = 0; i < length; i += typesCount) {
-typesArr.forEach(type =>{
+    for (let i = 0; i < length; i += varCountType) {
+varCountArr.forEach(type =>{
 const functname = Object.keys(type)[0];
 
     
 
-    generatedPassword += randomFunc[functname]();
+    genPwd += randomFunc[functname]();
 });
 
     }
-  const combinedCharacters =  generatedPassword.slice(0, length);
+  const allChar =  genPwd.slice(0, length);
 
-    return combinedCharacters;
+    return allChar;
 
 }
 
 // copy the password to clipbord
 
-clipboardEl.addEventListener("click", () => {
-    const textarea = document.createElement('textarea');
+clipboardEl.addEventListener("click", function() {
+    const pwdTextArea = document.createElement('pwdTextArea');
     const password = outputEl.innerText;
 
     if(!password) {
         return;
     }
 
-    textarea.value = password;
-    document.body.appendChild(textarea);
-    textarea.select();
+    pwdTextArea.value = password;
+    document.body.appendChild(pwdTextArea);
+    pwdTextArea.select();
     document.execCommand("copy");
-    textarea.remove();
+    pwdTextArea.remove();
 })
 
 
