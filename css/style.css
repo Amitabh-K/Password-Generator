@@ -6,7 +6,7 @@ body {
 .container {
 	padding: 20px;    
 	border-radius: 25px;
-	font-size: 3rem;	
+	font-size: 2rem;	
 }
 
 #length {
@@ -26,7 +26,7 @@ body {
 	justify-content: flex-start;	
 	position: relative;		
 	padding: 10px 10px;
-	height: 100px;
+	height: 75px;
 	width: 100%;
 	border-radius: 10px;
 		
@@ -37,7 +37,7 @@ body {
 	right: 5px;
 }
 
-#symbol  { 
+#specialChar  { 
 	width: 40px; 
 	height: 40px; 
 } 
@@ -60,7 +60,7 @@ body {
 
 #generate{
 border-radius: 10px;
-font-size: 3rem;
+font-size: 2rem;
 }
 
 

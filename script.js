@@ -6,7 +6,7 @@ const lengthEl = document.getElementById('length');
 const upperEl = document.getElementById('lower');
 const lowerEl = document.getElementById('upper');
 const numberEl = document.getElementById('number');
-const symbolEl = document.getElementById('symbol');
+const specialCharEl = document.getElementById('specialChar');
 const generateEl = document.getElementById('generate');
 const clipboardEl = document.getElementById('clipboard');
 
@@ -15,7 +15,7 @@ const randomFunc = {
     lower:  getRamdomLower,
     upper:  getRamdomUpper,
     number: getRamdomNumber,
-    symbol: getRamdomsymbol
+    specialChar: getRamdomspecialChar
 };
 
 // Reference source https://www.w3schools.com/js/js_htmldom_eventlistener.asp
@@ -27,19 +27,19 @@ generateEl.addEventListener("click", ()  => {
     const containsLower = lowerEl.checked;
     const containsUpper = upperEl.checked;
     const containsNumber = numberEl.checked;
-    const containsSymbol = symbolEl.checked;
+    const containsspecialChar = specialCharEl.checked;
 
 
     
     outputEl.innerText = generatePassword(containsLower, 
-        containsNumber, containsUpper, containsSymbol, length );
+        containsNumber, containsUpper, containsspecialChar, length );
 
 });
  
 
 // Generate Passowrd function
 
-function generatePassword(lower, upper, number, symbol, length){
+function generatePassword(lower, upper, number, specialChar, length){
 //initialise passowrd variable
 // remove the uncheked boxes
 // loop over the length and call generator function for each type
@@ -49,13 +49,13 @@ var generatedPassword = "";
 
 // count number of checked boxes
 
- const typesCount = lower + upper + number + symbol;
+ const typesCount = lower + upper + number + specialChar;
 
  console.log("typescount:", typesCount);
 
- //array of objects lower, upper, number, symbol  as key & filter out unckecked
+ //array of objects lower, upper, number, specialChar  as key & filter out unckecked
 
- const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(item  => Object.values(item)[0])
+ const typesArr = [{lower}, {upper}, {number}, {specialChar}].filter(item  => Object.values(item)[0])
 
  console.log("typesArr: ", typesArr);
 
@@ -125,12 +125,12 @@ console.log(getRamdomNumber());
 
 // Replicating similar function as above but charCode being avoided for ease of coding
 
-function getRamdomsymbol (){
-    const symbol = "!@#$%^&*(){}[]<>/?+.";
-    return symbol[Math.floor(Math.random() * symbol.length)];
+function getRamdomspecialChar (){
+    const specialChar = "!@#$%^&*(){}[]<>/?+.";
+    return specialChar[Math.floor(Math.random() * specialChar.length)];
 }
 
-console.log(getRamdomsymbol());
+console.log(getRamdomspecialChar());
 
 
 
