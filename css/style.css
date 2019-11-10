@@ -52,14 +52,15 @@ body {
 } 
 
 
+
+
 #generate{
 border-radius: 10px;
 font-size: 2rem;
 }
 
 
-.box {
-		
+.box {		
 	justify-content: space-between;		
 	align-self: center;
 	align-items: center;
