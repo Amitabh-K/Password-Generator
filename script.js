@@ -73,6 +73,14 @@ if (typesCount ===0) {
      return("!!! Cannot generate bank password !!!"); 
    
     }
+
+    if(length > 128) {
+        alert("Enter number between 8 and 128");
+        return '';
+
+        
+    }
+    
     
 
     for (let i = 0; i < length; i += typesCount) {
