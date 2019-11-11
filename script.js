@@ -76,11 +76,14 @@ if (typesCount ===0) {
 
     if(length > 128) {
         alert("Enter number between 8 and 128");
-        return '';
-
-        
+        return '';        
     }
-    
+
+    if(length < 8) {
+        alert("Enter number between 8 and 128");
+        return '';
+     
+    }        
     
 
     for (let i = 0; i < length; i += typesCount) {
