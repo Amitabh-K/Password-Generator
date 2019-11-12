@@ -13,16 +13,11 @@
     <!-- As a heading -->
 <body> 
         <h1 id="mhead" class="bg-dark text-info m-4 p-4 border border-white1 text-center"> Password Generator
-            </h1> 
-    
-    
-    
-           <div id="snackbar">Password copied to Clipboard</div>
-
-        <div class="container bg-dark text-dark mt-2 border border-white">            
+            </h1>   
+          <div class="container bg-dark text-dark mt-2 border border-white">            
             <div class="password text-dark d-flex pt-3 pl-4  bg-light text-cente ">
                 <span id="password"></span>
-                <button class="btn bg-info text-white position-absolute" id="clipboard">
+                <button onclick="myFunction()" class="btn bg-info text-white position-absolute " id="clipboard">
                     <i class="far fa-clipboard"></i>
                 </button>
             </div>
@@ -55,6 +50,61 @@
             </button>       
         </div>  
 
+<!-- Snackbar All bar -->   
+        <style>
+                #snackbar {
+                  visibility: hidden;
+                  padding-bottom: .5rem;
+                  min-width: 250px;
+                  margin-left: -125px;
+                  background-color: #333;
+                  color: #fff;
+                  text-align: center;
+                  border-radius: 2px;
+                  padding: 10px;
+                  position: fixed;
+                  z-index: 1;
+                  left: 50%;
+                  top: 185px;                  
+                 height: 5%;                 
+                }
+                
+                #snackbar.show {
+                  visibility: visible;
+                  -webkit-animation: fadein 0s, fadeout 0.0s .5s;
+                  animation: fadein 0s, fadeout 0.0s .5s;
+                }
+                
+                @-webkit-keyframes fadein {
+                  from {top: 0; opacity: 0;} 
+                  to {top: 142px; opacity: 1;}
+                }
+                
+                @keyframes fadein {
+                  from {top: 0; opacity: 0;}
+                  to {top: 142px; opacity: 1;}
+                }
+                
+                @-webkit-keyframes fadeout {
+                  from {top: 142px; opacity: 1;} 
+                  to {top: 0; opacity: 0;}
+                }
+                
+                @keyframes fadeout {
+                  from {top: 142px; opacity: 1;}
+                  to {top: 0; opacity: 0;}
+                }
+                </style> 
+                <div id="snackbar">Password copied!!!</div>
+                
+                <script>
+                function myFunction() {
+                  var x = document.getElementById("snackbar");
+                  x.className = "show";
+                  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1500);
+                }
+                </script>
+  
 
         <script src="./script.js"></script>        
 <!-- jQuery CDN -->
