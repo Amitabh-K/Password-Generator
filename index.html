@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <title>Password Generator</title>
     </head>
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3e9d289ac8.js" crossorigin="anonymous"></script>    
     <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
 
@@ -23,7 +23,9 @@
                  </div>   
                </div>
             </div> 
-           </div>       
+           </div>
+           
+           <div id="snackbar">Password copied to Clipboard</div>
 
         <div class="container bg-dark text-dark mt-4 border border-white">            
             <div class="password text-dark d-flex pt-3 pl-4  bg-light text-cente ">
@@ -58,8 +60,7 @@
         </div>
             <button class="  bg-info btn btn-large border border-white my-4 p-3 w-100" id="generate">
                 Generate Password Now
-            </button>
-        
+            </button>        
     </div>  
 
         <script src="./script.js"></script>

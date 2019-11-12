@@ -66,7 +66,7 @@ body {
 	padding: 20px;    
 	border-radius: 25px;
 	font-size: 2rem;
-	width :80%;
+	width :50%;
 }
 
 #length {
@@ -114,6 +114,24 @@ border-radius: 10px;
 font-size: 2rem;
 }
 
+#snackbar {
+	visibility: hidden;
+	min-width: 250px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	padding: 16px;
+	position: fixed;
+	z-index: 1;
+	bottom: 100px;
+  }
+  
+  #snackbar.show {
+	visibility: visible;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
 
 .box {		
 	justify-content: space-between;		
@@ -121,7 +139,5 @@ font-size: 2rem;
 	align-items: center;
 	border-radius: 10px;	
 }
-
-
 
 
