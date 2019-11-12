@@ -17,9 +17,10 @@ body {
 
 	#candybar {
 		visibility: hidden;
-		font: 2rem sans-serif;
+		font: 1.5rem sans-serif;
+		color: #900b0b;
 		font-weight: 600;
-		background:#17a2b8 ;
+		background:#ffff ;		
 		min-width: 350px;
 		margin-left:-200px;			
 		text-align: center;
@@ -46,7 +47,7 @@ body {
 		background-color: rgb(250, 251, 251);		
 		color: #52b155;
 		text-align: center;
-		border-radius: 2px;
+		border-radius: 25px;
 		padding: 10px;
 		position: fixed;
 		z-index: 1;

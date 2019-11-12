@@ -9,7 +9,9 @@ var numberEl = document.getElementById('number');
 var specialCharEl = document.getElementById('specialChar');
 var generateEl = document.getElementById('generate');
 var clipboardEl = document.getElementById('clipboard');
-var toast = document.getElementById("snackbar");
+var candybar = document.getElementById("candybar");
+var snackbar = document.getElementById("snackbar");
+
 
 var randomFunc = {
     lower:  getRamdomLower,
@@ -33,10 +35,7 @@ function getRamdomspecialChar (){
     return specialChar[Math.floor(Math.random() * specialChar.length)];
 }
 
-function displayMessage(type, message) {
-    msgDiv.textContent = message;
-    msgDiv.setAttribute("snackbar", type);
-  }
+
 
 // create event listner
 
@@ -64,17 +63,18 @@ var generatedPassword = "";
 
  var typesCount = lower + upper + number + specialChar;
 
- 
+// candybar if count number of checked boxes is none 
 
- //array of objects lower, upper, number, specialChar  as key & filter out unckecked
-
+ function myFunctionCandy() {    
+    candybar.className = "view";
+    setTimeout(function(){ candybar.className = candybar.className.replace("view", ""); }, 3000);
+  }   
+//array of objects lower, upper, number, specialChar  as key & filter out unckecked
  var typesArr = [{lower}, {upper}, {number}, {specialChar}].filter(item  => Object.values(item)[0])
+ if (typesCount ===0) { 
+    return"" (myFunctionCandy()) ;
 
- if (typesCount ===0) {
-    displayMessage("error", "First name cannot be blank");
-  } 
-  
-  if(length > 128) {
+}      if(length > 128) {
         alert("Enter number between 8 and 128");
         return '';        
     }
@@ -93,6 +93,13 @@ var functname = Object.keys(type)[0];
     return combinedCharacters;
 }
 
+//Snackbar All  -   
+
+function myFunction() {    
+    snackbar.className = "show";
+    setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 1500);
+  }
+
 // Copy the password to clipbord
 
 clipboardEl.addEventListener("click", function() {
@@ -110,19 +117,14 @@ clipboardEl.addEventListener("click", function() {
     textBox.remove();    
 })
 
-//Snackbar All  -   
 
-function myFunction() {
-    var x = document.getElementById("snackbar");
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1500);
-  }                
+    
+  
+   
+
+  
                 
-  function myFunctionCandy() {
-    var x = document.getElementById("candybar");
-    x.className = "view";
-    setTimeout(function(){ x.className = x.className.replace("view", ""); }, 1000);
-  }            
+        
                 
                 
 
