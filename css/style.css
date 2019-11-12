@@ -18,8 +18,8 @@ body {
 .container {
 	padding: 20px;    
 	border-radius: 25px;
-	font-size: 1rem;
-	width :45%;
+	font-size: 2rem;
+	width :55%;
 }
 
 #length {
@@ -64,7 +64,7 @@ body {
 
 #generate{
 border-radius: 10px;
-font-size: 1rem;
+font-size: 2rem;
 }
 
 #snackbar {
