@@ -52,7 +52,7 @@ body {
 		position: fixed;
 		z-index: 1;
 		left: 50%;
-		top: 195px;                  
+		top: 190px;                  
 	  	                
 	  }
 	  
@@ -64,12 +64,12 @@ body {
 	  
 	  @-webkit-keyframes fadein {
 		from {top: 0; opacity: 0;} 
-		to {top: 195px; opacity: 1;}
+		to {top: 190px; opacity: 1;}
 	  }
 	  
 	  @keyframes fadein {
 		from {top: 0; opacity: 0;}
-		to {top: 195px; opacity: 1;}
+		to {top: 190px; opacity: 1;}
 	  }
 	  
 	  @-webkit-keyframes fadeout {
