@@ -45,23 +45,17 @@
                 </div>            
           </div> 
         </div>        
-            <button class=" font-weight-bold  bg-info btn btn-large border border-white my-4 p-3 w-100" id="generate">
+            <button onclick="myFunctionCandy()" class=" font-weight-bold  bg-info btn btn-large border border-white my-4 p-3 w-100" id="generate">
                 Generate Password Now
             </button>       
-        </div>  
-
+        </div>       
+  
 <!-- Snackbar All bar -->   
 
                 <div id="snackbar">Password copied!</div>
+                <div id="candybar">Here us your password. Click on the blue Icon to copy </div>
                 
-                <script>
-                function myFunction() {
-                  var x = document.getElementById("snackbar");
-                  x.className = "show";
-                  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1500);
-                }
-                </script>
-  
+
 
         <script src="./script.js"></script>        
 <!-- jQuery CDN -->

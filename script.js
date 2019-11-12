@@ -118,7 +118,11 @@ function myFunction() {
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1500);
   }                
                 
-                
+  function myFunctionCandy() {
+    var x = document.getElementById("candybar");
+    x.className = "view";
+    setTimeout(function(){ x.className = x.className.replace("view", ""); }, 1000);
+  }            
                 
                 
 
