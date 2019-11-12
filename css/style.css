@@ -9,12 +9,17 @@ body {
 		height: 100px;
 	}
 
+#mhead	{
+		font-size: 3rem;
+
+	}
+
 
 .container {
 	padding: 20px;    
 	border-radius: 25px;
-	font-size: 2rem;
-	width :65%;
+	font-size: 1rem;
+	width :45%;
 }
 
 #length {
@@ -38,28 +43,28 @@ body {
 }
 
 #specialChar  { 
-	width: 40px; 
-	height: 40px; 
+	width: 30px; 
+	height: 30px; 
 } 
 
 #lower  { 
-	width: 40px; 
-	height: 40px; 
+	width: 30px; 
+	height: 30px; 
 } 
 
 #number  { 
-	width: 40px; 
-	height: 40px; 
+	width: 30px; 
+	height: 30px; 
 } 
 
 #upper  { 
-	width: 40px; 
-	height: 40px; 
+	width: 30px; 
+	height: 30px; 
 } 
 
 #generate{
 border-radius: 10px;
-font-size: 2rem;
+font-size: 1rem;
 }
 
 #snackbar {
