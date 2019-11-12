@@ -13,7 +13,7 @@
  <!-- Container for nav bar -->   
     <!-- As a heading -->
 <body> 
-        <h1 id="mhead" class="bg-dark text-info m-4 p-4 border border-white1 text-center"> Password Generator
+        <h1 id="mhead" class="bg-dark text-info m p-4 border border-white1 text-center"> Password Generator
             </h1>   
           <div class="container bg-dark text-dark mt-2 border border-white">            
             <div class="password text-dark d-flex pt-3 pl-4  bg-light text-cente ">
@@ -32,7 +32,7 @@
                     <label>Include uppercase</label> 
                     <input class="checkbox" type="checkbox" id="upper"  />
                 </div>
-                <div class="box border border-dark m-3 p-2 d-flex ju">
+                <div class="box border border-dark m-3 p-2 d-flex">
                     <label class="checkbox">Include lowercase</label> 
                     <input class="checkbox" type="checkbox" id="lower"  />
                 </div>
@@ -46,18 +46,22 @@
                 </div>            
           </div> 
         </div>        
-            <button class=" font-weight-bold  bg-info btn btn-large border border-white my-4 p-3 w-100" id="generate">
+            <button class=" font-weight-bold  bg-info btn btn-large border border-white my-4 p-2 w-100" id="generate">
                 Generate Password Now
             </button> 
                   
         </div>       
   
 <!-- Snackbar All bar -->   
-             <div class="text-dark" id="candybar"><strong> Oh, snap! </strong>guess what I saw? A blank password?</div>     
+             <div class="text-dark" id="candybar"><strong> Oh, snap! a blank is not a password </strong></div>     
                 <div id="snackbar">Password copied!</div>
                 
                 
 
+<!-- Footer section structure -->
+<div class="footer fixed-bottom text-white bg-dark text-center small p-3">        
+    Copyright © 2019  
+  </div>
 
         <script src="./script.js"></script>        
 <!-- jQuery CDN -->
