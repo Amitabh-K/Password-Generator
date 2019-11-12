@@ -8,26 +8,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3e9d289ac8.js" crossorigin="anonymous"></script>    
     <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
-
-    <body>
    
  <!-- Container for nav bar -->   
     <!-- As a heading -->
-    <div class=" mastheadr rounded">
-            <div class="sticky-top rounded">      
-               <div class="ngroup rounded">
-                   <nav  class=" p-2 mb-0 font-weight-bold text-warning text-center display-1 style:">Password Generator</nav>
-               <div class="xbox rounded"> 
-                   <nav class="p-2 bg-light mb-0 ">                    
-                  </nav>
-                 </div>   
-               </div>
-            </div> 
-           </div>
-           
+<body> 
+        <div id="mhead" class="container bg-dark text-light mt-2 p-4 border border-white font-weight-bold display-1 text-center"> Password Generator
+            </div>  
+    
+    
+    
            <div id="snackbar">Password copied to Clipboard</div>
 
-        <div class="container bg-dark text-dark mt-4 border border-white">            
+        <div class="container bg-dark text-dark mt-2 border border-white">            
             <div class="password text-dark d-flex pt-3 pl-4  bg-light text-cente ">
                 <span id="password"></span>
                 <button class="btn bg-info text-white position-absolute" id="clipboard">
@@ -36,7 +28,7 @@
             </div>
         <div class=" box bg-info mt-4 border border-white">
             <div class="mainBox ">
-                <div class="box border border-dark m-3 p-2  rounded d-flex">
+                <div class="box border border-dark  m-4 p-2  rounded d-flex">
                     <label class="label-box">Password length</label>
                     <input class="pl-2" type="number" id="length" min='8' max='128' value='8' />
                 </div>
@@ -57,12 +49,20 @@
                     <input class="checkbox" type="checkbox" id="specialChar" checked />
                 </div>            
           </div> 
-        </div>
-            <button class="  bg-info btn btn-large border border-white my-4 p-3 w-100" id="generate">
+        </div>        
+            <button class=" font-weight-bold  bg-info btn btn-large border border-white my-4 p-3 w-100" id="generate">
                 Generate Password Now
-            </button>        
-    </div>  
+            </button>       
+        </div>  
 
-        <script src="./script.js"></script>
+
+        <script src="./script.js"></script>        
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Bootstrap JavaScript CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     </body>
     </html>       

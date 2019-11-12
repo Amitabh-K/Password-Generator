@@ -18,6 +18,26 @@ var randomFunc = {
     specialChar: getRamdomspecialChar
 };
 
+// Character generator functions
+function getRamdomUpper (){
+    return String.fromCharCode(Math.floor(Math.random()*26) + 65);
+}
+function getRamdomLower () {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
+function getRamdomNumber (){
+    return String.fromCharCode(Math.floor(Math.random()*10) + 48);
+}
+function getRamdomspecialChar (){
+    const specialChar = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
+    return specialChar[Math.floor(Math.random() * specialChar.length)];
+}
+
+function displayMessage(type, message) {
+    msgDiv.textContent = message;
+    msgDiv.setAttribute("snackbar", type);
+  }
+
 // create event listner
 
 generateEl.addEventListener("click", function() {
@@ -44,21 +64,25 @@ var generatedPassword = "";
 
  var typesCount = lower + upper + number + specialChar;
 
- console.log("typescount:", typesCount);
+ 
 
  //array of objects lower, upper, number, specialChar  as key & filter out unckecked
 
  var typesArr = [{lower}, {upper}, {number}, {specialChar}].filter(item  => Object.values(item)[0])
 
  if (typesCount ===0) {
-     return("!!! Cannot generate blank password !!!");    
-    } if(length > 128) {
+    displayMessage("error", "First name cannot be blank");
+  } 
+  
+  if(length > 128) {
         alert("Enter number between 8 and 128");
         return '';        
-    }if(length < 8) {
+    }
+    if(length < 8) {
         alert("Enter number between 8 and 128");
         return '';    
-    }for (let i = 0; i < length; i += typesCount) {
+    }
+    for (let i = 0; i < length; i += typesCount) {
 typesArr.forEach(type =>{
 var functname = Object.keys(type)[0]; 
 
@@ -72,35 +96,18 @@ var functname = Object.keys(type)[0];
 // Copy the password to clipbord
 
 clipboardEl.addEventListener("click", function() {
-    var textarea = document.createElement('textarea');
+    var textBox = document.createElement('textBox');
     var password = outputEl.innerText;
 
     if(!password) {        
         return "";
         }
 
-    textarea.value = password;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand("copy");
-    textarea.remove();    
+    textBox.value = password;
+    document.body.appendChild(textBox);
+    textBox.select();
+    document.execCommand("copy");    
+    textBox.remove();    
 })
-
-// Character generator functions
-
-function getRamdomLower () {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-}
-function getRamdomUpper (){
-    return String.fromCharCode(Math.floor(Math.random()*26) + 65);
-}
-function getRamdomNumber (){
-    return String.fromCharCode(Math.floor(Math.random()*10) + 48);
-}
-function getRamdomspecialChar (){
-    const specialChar = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
-    return specialChar[Math.floor(Math.random() * specialChar.length)];
-}
-
 
 

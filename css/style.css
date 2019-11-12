@@ -3,70 +3,18 @@ body {
     background-image:url(../images/artificial.jpg);       
 	}
 
-
-/* Entire heading Styling including for navigation*/
-
-@media (min-width: 576px) {  
-	[class*="h1"] {
-	width: 300;
-	align-self: flex-start;
-
-	}}
-
-  /* Styling name at header*/
-
-  @media (min-width: 576px) {  
-	[class*="masthead"] {   
 	  
-	  padding: 0 2% 0 2%;
-		  
-	} 
+	.mhead {
 
-	/*  header making heady stick*/
-
-  @media (min-width: 576px) {  
-	[class*="sticky-top"] {
-	  display: flex;
-	  justify-content: center;
-
-	}}
-
-/* Styling for navigatin as a whole*/
-
-@media (min-width: 576px) {  
-  [class*="xbox"] {   
-  align-self: flex-end;    
-  } }
-
-
-/* nav styling*/
-
-@media (min-width: 768px) {  
-[class*="ngroup"] {
-  display: flex;            
-  justify-content: space-between; 
-  width: 720px;
-  margin-bottom: 0;
-
-}    }  
-
-/* nav styling*/
-
-@media (min-width: 992px) {  
-[class*="ngroup"] {
-  display: flex;            
-  justify-content: space-between; 
-  width: 960px;
-  margin-bottom: 0;
-
-}    } 
+		height: 100px;
+	}
 
 
 .container {
 	padding: 20px;    
 	border-radius: 25px;
 	font-size: 2rem;
-	width :50%;
+	width :65%;
 }
 
 #length {
@@ -79,10 +27,10 @@ body {
 	font-size: 1.8rem;
 	overflow-x: scroll;		
 	position: relative;	
-	height: 90px;
-	width: 100%;
-	border-radius: 10px;		
-}
+	height: 90px;	
+	border-radius: 10px;	
+	align-self: center;	
+	}
 
 .password .btn {	
 	border-radius: 10px;	
@@ -137,7 +85,8 @@ font-size: 2rem;
 	justify-content: space-between;		
 	align-self: center;
 	align-items: center;
-	border-radius: 10px;	
+	border-radius: 10px;
+	
 }
 
 
