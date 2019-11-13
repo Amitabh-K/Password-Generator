@@ -1,1 +1,60 @@
-# Password.ak
+# CSS and Bootstrap Homework: Responsive Portfolio
+
+To create a mobile-first application and add responsive design to portfolio using CSS and Bootstrap.
+
+## Getting Started
+
+This enhancement is for the  for better results on a mobile device.
+This file renders stack up header and images and content for Extra small and small devices while for screen sizes Medium and Large header is spaced horizontly and the images have followed the suit.
+
+### Content based on usercase
+
+This app will runs in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.
+
+The user will be prompted to choose from the following password criteria:
+
+* Length (must be between 8 and 128 characters)
+
+* Character type:
+
+  * Special characters
+
+  * Numeric characters
+
+  * Lowercase characters
+
+  * Uppercase characters
+
+  ### Apart from the usercase
+
+  * The user is also have the option to click a button to copy the password to their clipboard.
+  * The user will get an animatted snackbar for password generated and error message incase used doec not select any option.
+  
+
+  
+  ### Prerequisites
+
+This file opens in all the browsers, but chrome (incluging chrome for mobile devices) has been deemed as the browser for best results.
+
+### Accessing
+
+This web application  / can be accessed via the link https://amitabh-k.github.io/Password.ak/
+
+## Running the tests
+
+Use Inspect Element of Google Chrome to test the responsiveness of the web-page's on various screen sizes.
+
+## Technologies
+
+* Javascript
+* HTML
+* CSS
+* Bootstrap CSS framework for responsive, mobile-first front-end web development
+
+## Author
+
+* **Amitabh Kumar**
+
+## Acknowledgments
+
+* Ali MaDavid Bland's (instructor) help on Animations
