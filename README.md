@@ -1,6 +1,6 @@
 # JavaScript: Password Generator
 
-Create an application that generates a random password based on user-selected criteria. This app runs in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.
+Create an application that generates a random password based on user-selected criteria. This application runs in the browser and feature dynamically updated HTML and CSS powered by JavaScript code.
 
 ## Getting Started
 
