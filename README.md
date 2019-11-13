@@ -8,8 +8,6 @@ This application randomly generates passwords that meets certain criteria (decid
 
 ### Content based on usercase
 
-This app will runs in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.
-
 The user will be prompted to choose from the following password criteria:
 
 * Length (must be between 8 and 128 characters)
