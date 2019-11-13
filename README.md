@@ -29,9 +29,7 @@ The user will be prompted to choose from the following password criteria:
 
   * The user is also have the option to click a button to copy the password to their clipboard.
   * The user will get an animatted snackbar for password generated and error message incase used doec not select any option.
-  
-
-  
+ 
   ### Prerequisites
 
 This file opens in all the browsers, but chrome (incluging chrome for mobile devices) has been deemed as the browser for best results.
@@ -57,4 +55,5 @@ Use Inspect Element of Google Chrome to test the responsiveness of the web-page'
 
 ## Acknowledgments
 
-* Ali MaDavid Bland's (instructor) help on Animations
+* Ali Maqsood for all content delivery
+* David Bland's (instructor) help on Animations and the content delivery
