@@ -1,11 +1,10 @@
-# CSS and Bootstrap Homework: Responsive Portfolio
+# JavaScript: Password Generator
 
-To create a mobile-first application and add responsive design to portfolio using CSS and Bootstrap.
+Create an application that generates a random password based on user-selected criteria. This app runs in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.
 
 ## Getting Started
 
-This enhancement is for the  for better results on a mobile device.
-This file renders stack up header and images and content for Extra small and small devices while for screen sizes Medium and Large header is spaced horizontly and the images have followed the suit.
+This application randomly generates passwords that meets certain criteria (decided by the user).
 
 ### Content based on usercase
 
