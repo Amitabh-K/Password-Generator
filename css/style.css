@@ -52,9 +52,10 @@ body {
 	.password .btn {	
 		border-radius: 3px;
 		font-size: xx-small;	
-		right: 5px;
+		right: 2px;
 		position: absolute;
-		padding: 5px;
+		padding: 3px;
+		overflow: hidden;
 	}
 
 
