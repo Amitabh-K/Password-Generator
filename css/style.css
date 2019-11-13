@@ -1,35 +1,81 @@
 
 body {    
 	background-image:url(../images/artificial1.jpg);
-	font-family: 'Patua One', cursive;       
-	}
-
-	  
-	.mhead {
-		height: 125px;
-		margin: auto;
+	font-family: 'Patua One', cursive;
+	overflow-y: scroll;     
 	}
 
 #mhead	{
-		font-size: 3rem;
+		font-size: 2.5rem;
 
 	}
 
+	.container {
+		padding: 20px 20px 0px 20px;    
+		border-radius: 25px;
+		font-size: 1.5rem;
+		width :350px;
+		height: auto;
+	}
+	
+	#box5 {
+		
+		border-radius: 10px;
+		font-size: 1rem;
+		
+	}
+	.box {		
+		justify-content: space-between;		
+		align-self: center;
+		align-items: center;
+		border-radius: 10px;
+		
+	}
+
+
+	#length {
+		border-radius: 10px;
+		text-align-last: justify;
+	}
+	
+	
+	.password {	
+		font-size: 1.2rem;
+		overflow-x: scroll;		
+		position: relative;	
+		height: 65px;	
+		border-radius: 10px;	
+		align-self: center;	
+		}
+	
+	.password .btn {	
+		border-radius: 10px;	
+		right: 5px;
+		position: fixed;
+	}
+
+
+
+	#generate{
+		border-radius: 10px;
+		font-size: 1.2rem;
+		}
+
 	#candybar {
 		visibility: hidden;
-		font: 1.5rem sans-serif;
+		font: 1rem sans-serif;
 		color: #900b0b;
 		font-weight: 600;
 		background:#ffff ;		
 		min-width: 350px;
-		margin-left:-200px;			
+		margin-left:-175px;			
 		text-align: center;
 		border-radius: 2px;
 		padding: 10px;
 		position: absolute;
 		z-index: 1;
 		left: 50%;
-		top: 610px;                  
+		top: 350px;                  
 	  	                
 	  }
 	  
@@ -82,66 +128,30 @@ body {
 		to {top: 0; opacity: 0;}
 	  } 
 
-.container {
-	padding: 20px;    
-	border-radius: 25px;
-	font-size: 1.5rem;
-	width :560px;
-	height: 670px;
-}
 
-#length {
-	border-radius: 10px;
-	text-align-last: justify;
-}
-
-
-.password {	
-	font-size: 1.8rem;
-	overflow-x: scroll;		
-	position: relative;	
-	height: 90px;	
-	border-radius: 10px;	
-	align-self: center;	
-	}
-
-.password .btn {	
-	border-radius: 10px;	
-	right: 5px;
-	position: fixed;
-}
 
 #specialChar  { 
-	width: 30px; 
-	height: 30px; 
+	width: 20px; 
+	height: 20px; 
 } 
 
 #lower  { 
-	width: 30px; 
-	height: 30px; 
+	width: 20px; 
+	height: 20px; 
 } 
 
 #number  { 
-	width: 30px; 
+	width: 20px; 
 	height: 30px; 
 } 
 
 #upper  { 
-	width: 30px; 
-	height: 30px; 
+	width: 20px; 
+	height: 20px; 
 } 
 
-#generate{
-border-radius: 10px;
-font-size: 2rem;
-}
 
-.box {		
-	justify-content: space-between;		
-	align-self: center;
-	align-items: center;
-	border-radius: 10px;
-	
-}
+
+
 
 

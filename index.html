@@ -13,47 +13,48 @@
  <!-- Container for nav bar -->   
     <!-- As a heading -->
 <body> 
-        <h1 id="mhead" class="bg-dark text-info m p-4 border border-white1 text-center"> Password Generator
+    
+        <h1 id="mhead" class="bg-dark text-info m p-3 border border-white text-center"> Password Generator
             </h1>   
           <div class="container bg-dark text-dark mt-2 border border-white">            
-            <div class="password text-dark d-flex pt-3 pl-4  bg-light text-cente ">
+            <div class="password text-dark d-flex pt-3 pl-4  bg-light ">
                 <span id="password"></span>
                 <button onclick="myFunction()" class="btn bg-info text-white position-absolute " id="clipboard">
                     <i class="far fa-clipboard"></i>
                 </button>
             </div>
-        <div class=" box bg-info mt-4 border border-white">
+        <div id="box5" class="bg-info mt-4 border border-white">
             <div class="mainBox ">
-                <div class="box border border-dark m-3 p-2 d-flex">
+                <div class="box border border-dark m-1 p-1 d-flex">
                     <label class="label-box">Password length</label>
                     <input class="pl-2" type="number" id="length" min='8' max='128' value='8' selected />
                 </div>
-                <div class="box border border-dark m-3 p-2 d-flex">
+                <div class="box border border-dark m-1 p-1 d-flex">
                     <label>Include uppercase</label> 
                     <input class="checkbox" type="checkbox" id="upper"  />
                 </div>
-                <div class="box border border-dark m-3 p-2 d-flex">
+                <div class="box border border-dark m-1 p-1 d-flex">
                     <label class="checkbox">Include lowercase</label> 
                     <input class="checkbox" type="checkbox" id="lower"  />
                 </div>
-                <div class="box border border-dark m-3 p-2 d-flex">
+                <div class="box border border-dark m-1 p-1 d-flex">
                     <label>Include numbers</label> 
                     <input class="checkbox" type="checkbox" id="number"  />
                 </div>
-                <div class="box border border-dark m-3 p-2 d-flex">
+                <div class="box border border-dark m-1 p-1 d-flex">
                     <label>Include Symbols</label> 
                     <input class="checkbox" type="checkbox" id="specialChar"  />
                 </div>            
           </div> 
         </div>        
-            <button class=" font-weight-bold  bg-info btn btn-large border border-white my-4 p-2 w-100" id="generate">
+            <button class=" font-weight-bold  bg-info btn btn-large border border-white my-4 p-1 w-100" id="generate">
                 Generate Password Now
             </button> 
                   
         </div>       
   
 <!-- Snackbar All bar -->   
-             <div class="text-dark" id="candybar"><strong> Oh, snap! a blank is not a password </strong></div>     
+             <div class="text-dark" id="candybar"><strong> Oh, snap! A blank password! </strong></div>     
                 <div id="snackbar">Password copied!</div>
                 
                 
