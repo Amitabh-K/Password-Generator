@@ -6,7 +6,7 @@ Create an application that generates a random password based on user-selected cr
 
 This application randomly generates passwords that meets certain criteria (decided by the user).
 
-### Content based on usercase
+### Content based on use case
 
 The user will be prompted to choose from the following password criteria:
 
@@ -22,26 +22,26 @@ The user will be prompted to choose from the following password criteria:
 
   * Uppercase characters
 
-  ### Apart from the usercase
+  ### Apart from the use case
 
   * The user is also have the option to click a button to copy the password to their clipboard.
-  * The user will get an animatted snackbar for password generated and error message incase used doec not select any option.
+  * The user will get an animated snackbar for password generated and error message in case used does not select any option.
  
   ### Prerequisites
 
-This file opens in all the browsers, but chrome (incluging chrome for mobile devices) has been deemed as the browser for best results.
+This file opens in all the browsers, but chrome (including chrome for mobile devices) has been deemed as the browser for best results.
 
 ### Accessing
 
-This web application  / can be accessed via the link https://amitabh-k.github.io/Password.ak/
+This web application / can be accessed via the link https://amitabh-k.github.io/Password.ak/
 
 ## Running the tests
 
-Use Inspect Element of Google Chrome to test the responsiveness of the web-page's on various screen sizes.
+Use Inspect Element of Google Chrome to test the responsiveness of the webpage’s on various screen sizes.
 
 ## Technologies
 
-* Javascript
+* JavaScript
 * HTML
 * CSS
 * Bootstrap CSS framework for responsive, mobile-first front-end web development
