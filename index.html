@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Password Generator</title>
-    </head>
-    <link rel="stylesheet" href="./assets/css/reset.css">
+        <title>Password Generator</title>    
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3e9d289ac8.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
-   
+</head>
  <!-- Container for nav bar -->   
     <!-- As a heading -->
 <body> 
@@ -28,7 +28,7 @@
             <div class="mainBox ">
                 <div class="box border border-dark m-1 p-1 d-flex">
                     <label class="label-box">Password length</label>
-                    <input class="pl-2" type="number" id="length" min='8' max='128' value='8' selected />
+                    <input class="pl-2" type="number" id="length" min='8' max='128' value='8'/>
                 </div>
                 <div class="box border border-dark m-1 p-1 d-flex">
                     <label>Uppercase characters</label> 
@@ -49,7 +49,7 @@
           </div> 
         </div>        
             <button class=" font-weight-bold  bg-info btn btn-large border border-white my-4 p-1 w-100" id="generate">
-                Generate Password Now
+                Generate Password
             </button> 
                   
         </div>       
@@ -68,9 +68,7 @@
         <script src="./script.js"></script>        
 <!-- jQuery CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
 <!-- Bootstrap JavaScript CDN -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     </body>
