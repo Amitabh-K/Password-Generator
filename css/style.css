@@ -40,18 +40,21 @@ body {
 	
 	
 	.password {	
-		font-size: 1.2rem;
+		font-size: 1rem;
+		display: flex;
 		overflow-x: scroll;		
 		position: relative;	
-		height: 65px;	
+		height: 60px;	
 		border-radius: 10px;	
 		align-self: center;	
 		}
 	
 	.password .btn {	
-		border-radius: 10px;	
+		border-radius: 3px;
+		font-size: xx-small;	
 		right: 5px;
-		position: fixed;
+		position: absolute;
+		padding: 5px;
 	}
 
 
@@ -87,13 +90,12 @@ body {
 	  
 	  #snackbar {
 		visibility: hidden;
-		font: 1.5rem sans-serif;
+		font: 1rem sans-serif;
 		font-weight: 600;
 		min-width: 250px;		
 		background-color: rgb(250, 251, 251);		
 		color: #52b155;
-		text-align: center;
-		border-radius: 25px;
+		text-align: center;		
 		padding: 10px;
 		position: fixed;
 		z-index: 1;

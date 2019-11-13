@@ -67,7 +67,7 @@ var generatedPassword = "";
 
  function myFunctionCandy() {    
     candybar.className = "view";
-    setTimeout(function(){ candybar.className = candybar.className.replace("view", ""); }, 3000);
+    setTimeout(function(){ candybar.className = candybar.className.replace("view", ""); }, 1500);
   }   
 //array of objects lower, upper, number, specialChar  as key & filter out unckecked
  var typesArr = [{lower}, {upper}, {number}, {specialChar}].filter(item  => Object.values(item)[0])
