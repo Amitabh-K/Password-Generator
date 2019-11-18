@@ -3,8 +3,8 @@
 
 var outputEl = document.getElementById('password');
 var lengthEl = document.getElementById('length');
-var upperEl = document.getElementById('lower');
-var lowerEl = document.getElementById('upper');
+var upperEl = document.getElementById('upper');
+var lowerEl = document.getElementById('lower');
 var numberEl = document.getElementById('number');
 var specialCharEl = document.getElementById('specialChar');
 var generateEl = document.getElementById('generate');
@@ -35,8 +35,6 @@ function getRamdomspecialChar (){
     return specialChar[Math.floor(Math.random() * specialChar.length)];
 }
 
-
-
 // create event listner
 
 generateEl.addEventListener("click", function() {
@@ -46,12 +44,12 @@ generateEl.addEventListener("click", function() {
     var containsNumber = numberEl.checked;
     var containsspecialChar = specialCharEl.checked;
 
-    outputEl.innerText = generatePassword(containsLower, 
-        containsNumber, containsUpper, containsspecialChar, length );
+    outputEl.innerText = generatePassword(containsUpper, containsLower, 
+        containsNumber, containsspecialChar, length );
 }); 
 // Generate Passowrd function
 
-function generatePassword(lower, upper, number, specialChar, length){
+function generatePassword(upper, lower, number, specialChar, length){
 
 //initialise passowrd variable ;
 // loop over the length and call generator function for each type
@@ -61,7 +59,7 @@ var generatedPassword = "";
 
 // count number of checked boxes
 
- var typesCount = lower + upper + number + specialChar;
+ var charTypeCount = lower + upper + number + specialChar;
 
 // candybar if count number of checked boxes is none 
 
@@ -71,7 +69,7 @@ var generatedPassword = "";
   }   
 //array of objects lower, upper, number, specialChar  as key & filter out unckecked
  var typesArr = [{lower}, {upper}, {number}, {specialChar}].filter(item  => Object.values(item)[0])
- if (typesCount ===0) { 
+ if (charTypeCount ===0) { 
     return"" (myFunctionCandy()) ;
 
 }      if(length > 128) {
@@ -82,7 +80,7 @@ var generatedPassword = "";
         alert("Enter number between 8 and 128");
         return '';    
     }
-    for (let i = 0; i < length; i += typesCount) {
+    for (let i = 0; i < length; i += charTypeCount) {
 typesArr.forEach(type =>{
 var functname = Object.keys(type)[0]; 
 

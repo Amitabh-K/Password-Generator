@@ -24,8 +24,9 @@ The user will be prompted to choose from the following password criteria:
 
   ### Apart from the use case
 
-  * The user is also have the option to click a button to copy the password to their clipboard.
   * The user will get an animated snackbar for password generated and error message in case used does not select any option.
+  * The user is also have the option to click a button to copy the password to their clipboard.
+  * Though desirable that the button to copy the password should not scroll along with the “generated password, in case the said value doesn’t fit the screen, but it does and has been left as it is which will be taken care of in future enhancement.
  
   ### Prerequisites
 
