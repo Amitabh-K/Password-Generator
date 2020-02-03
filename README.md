@@ -34,7 +34,7 @@ This file opens in all the browsers, but chrome (including chrome for mobile dev
 
 ### Accessing
 
-This web application / can be accessed via the link https://amitabh-k.github.io/Password.ak/
+This web application / can be accessed via the link https://amitabh-k.github.io/Password-Generator/
 
 ## Running the tests
 
